@@ -1,0 +1,139 @@
+1 )
+
+# drite a function for factorial number 
+
+def facto():
+    n = int(input("Enter your number: ")) 
+    fac = 1 
+    
+    if n==1:
+        print("factorial is",n)
+    elif n== 0:
+        print("Factorial of 0 is 1")
+    else :
+        for i in range(2,n+1):
+            fac=fac*i
+        print(f"factorial of {n} is {fac}")
+        
+facto()
+
+
+2)
+
+3) not completed 
+
+#check given number is armstrong number or not 
+
+num = [(input("Enter your three digit number : "))]
+output = []
+e = []
+j = 0
+temp = 0
+privious = 0
+num = int(num[0])
+
+while num>0:
+    num1 = num%10 
+    num = int(num/10)
+    output.append(num1)
+print(output)
+
+for i in range(output[0],):
+    output[i] = output[i]**len(output)
+    temp = output[i] + privious
+    privious = temp
+print(temp)
+
+if temp == num :
+    print("yes")
+else :
+    print("No")
+
+4)
+
+#Given number is prime or not
+
+number = int(input("ENter number : "))
+
+if number > 1:
+    for i in range(2, number):
+        if (number % i) == 0:
+            print("Not Prime Number")
+            break
+    else :
+        print("Prime number")
+
+5)
+
+#write a prime number between 23 to 79
+
+start = 23
+end = 79
+
+for number in range(start, end+1):
+    if number > 1:
+        for i in range(2, number):
+            if (number % i) == 0:
+                break
+        else :
+            print(number)
+
+6)
+
+#find the area of circle 
+
+num = int(input('Enter radius : '))
+
+area = (22/7)*num*num 
+
+print(area)
+
+7)
+
+#print fibonacci number till 200 using function 
+
+def fib():
+    
+    n1 = 0
+    n2 = 1
+    nth =0
+    print(n1)
+    print(n2)
+    while nth < 200:
+        nth = n1+n2
+        print(n2)
+        n1= n2
+        n2=nth
+    
+fib()
+
+8)
+
+#print nth fibonacci number
+
+def fib():
+    
+    n1 = 0
+    n2 = 1
+    nth = int(input("Enter nth number : "))
+    if nth < 0:
+        print("negative number fibonacci not possible")
+    elif nth == 1:
+        print("fibonaci value is : 0")
+    else :
+        for i in range(2,nth):
+            nth = n1+n2
+            n1= n2
+            n2=nth
+        print(n2)
+    
+fib()
+
+9)
+
+
+
+
+
+
+
